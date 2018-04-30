@@ -14,6 +14,10 @@ app.config([
 			.when('/film/:id', {
 				templateUrl: './views/singleFilm.html',
 				controller: 'SingleFilmController'
+			})
+			.when('/people/:id', {
+				templateUrl: './views/singlePeople.html',
+				controller: 'SinglePeopleController'
 			});
 	}
 ]);

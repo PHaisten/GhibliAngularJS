@@ -18,4 +18,19 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="card col-md-4" style="width: 18rem;" ng-repeat="person in people">
+            <img class="card-img-top w-100" src="https://www.theedgesusu.co.uk/wp-content/uploads/2016/01/studio_ghibli.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{ person.name }}</h5>
+                <p class="card-text">{{ person.gender }}</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">{{ person.hair_color }}</li>
+                <li class="list-group-item">{{ person.eye_color }}</li>
+                <div class="card-body">
+                    <a href="/people/{{ person.id }}" class="btn btn-primary">View Details</a>
+                </div>
+        </div>
+    </div>
 </div>
